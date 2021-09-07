@@ -8,7 +8,7 @@ html, body{
 	font-family: 'Roboto', sans-serif;
     font-size: 100%;
   	overflow-x: hidden;
-	background-color: #edecec;
+	background-color: #130707;
 }
 body a{
 	transition:0.5s all;
@@ -69,7 +69,7 @@ li.breadcrumb-item i.fa.fa-angle-right {
 	vertical-align: middle;
 }
 .breadcrumb > li {
-    color: #e74c3c ! important;
+    color: #272120 ! important;
     font-size: 16px ! important;
     vertical-align: middle ! important;
 }
@@ -197,7 +197,7 @@ label.col-sm-2.control-label {
 }
 #menu li a:hover {
   color: #ffffff;
-  background-color:#1b93e1;
+  background-color:#66747d;
   transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
    border-left: 4px solid #4A4A4A;
 }
@@ -249,8 +249,9 @@ background-color:#00C6D7!important;
     width: 100%;
     padding: 15px 14px 15px;
     box-sizing: border-box;
-    background: #1b93e1;
-    text-align: center;
+    background: #486375;
+    text-align: right;
+
 }
 .sidebar-icon {
     margin-top: -2px;
@@ -320,7 +321,8 @@ li#menu-academico{
 }
 .logo-w3-agile h1 {
     margin: 0;
-    font-size: 35px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo-w3-agile h1 a {
     color: #fff;
@@ -336,12 +338,12 @@ li#menu-academico{
 .profile_details {
     float: left;
     width: 24.25%;
-    background: #1b93e1;
+    background: #666d71;
     text-align: center;
-    padding: 0.3em 1em;
+    /* padding: 0.3em 1em; */
 }
 .logo-w3-agile {
-    background: #a2d200;
+    background: #79825c;
     float: left;
     width: 65.25%;
     text-align: center;
@@ -898,17 +900,17 @@ ul.dropdown-menu.drp-mnu li {
 /*--header --*/
 /*---four-grids-----*/ 
 .four-agileits {
-    background: #ff4a43;
+    background: 776969;
     text-align: center;
     padding: 2em 0;
 }
 .four-agileinfo {
-    background: #22beef;
+    background: #2e373a;
     padding: 2em 0;
     text-align: center;
 }
 .four-w3ls {
-    background: #a2d200;
+    background: #383c2d;
     padding: 2em 0;
     text-align: center;
 }
@@ -4546,7 +4548,7 @@ label.control-label {
 .back a {
     display: block;
     font-size: 1.2em;
-    color: #e74c3c;
+    color: #f1e8e7;
     text-decoration: none;
     padding-top: 6px;
     text-align: center;
@@ -4715,7 +4717,7 @@ ul.bt-list {
 }
 /*---signin-----*/
 .main-wthree{
-		background:#3b8fc5;
+		background:#394248;
 		min-height:794px;
 }
 span.prfil-img img {
@@ -4734,25 +4736,14 @@ span.prfil-img img {
 .main-wthree form span {
     width: 29%;
     float: left;
-    background: #e74c3c;
+    background: #5f5958;
     padding: 10.2px 10px;
     position: relative;
     color: #fff;
     font-size: 15px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 
-.main-wthree form span:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    right: -11px;
-    border-top: 6px solid rgba(0, 0, 0, 0);
-    border-left: 11px solid #e74c3c;
-    border-bottom: 6px solid rgba(0, 0, 0, 0);
-    top: 14px;
-}
 .main-wthree input.name {
 	width: 71%;
 	padding:10px 10px 10px 15px;
@@ -4800,7 +4791,7 @@ span.prfil-img img {
     text-align: right;
 }
 .main-wthree input[type="submit"]{
-	background-color:#005377;
+	background-color:#15252b;
 	color:#fff;
 	padding:11px;
 	outline: none;
@@ -4816,7 +4807,7 @@ span.prfil-img img {
 	-ms-transition: 0.5s all;
 }
 .main-wthree input[type="submit"]:hover{
-	background:#e74c3c;
+	background:#59615d;;
 }
 
 .sin-w3-agile {
@@ -5044,6 +5035,7 @@ span.prfil-img img {
 		font-size:11px;
 	}
 	.main-wthree input[type="submit"] {
+        background-color: #112933;
 		padding: 9px;
 		font-size: 16px;
 		width: 60%;

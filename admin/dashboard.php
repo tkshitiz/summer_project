@@ -49,18 +49,33 @@ else{
 								<i class="glyphicon glyphicon-user" aria-hidden="true"></i>
 							</div>
 							<div class="four-text">
-								<h3>User</h3>
+								<h3>Total Users</h3>
 
 								<?php $sql = "SELECT id from tblusers";
-$query = $dbh -> prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=$query->rowCount();
-					?>			<h4> <?php echo htmlentities($cnt);?> </h4>
-				
-								
+									$query = $dbh -> prepare($sql);
+									$query->execute();
+									$results=$query->fetchAll(PDO::FETCH_OBJ);
+									$cnt=$query->rowCount();
+									?>								
+									<h4> <?php echo htmlentities($cnt);?> </h4>
+							</div>							
+						</div>
+					</div>
+					<div class="col-md-3 four-grid">
+						<div class="four-wthree">
+							<div class="icon">
+								<i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i>
 							</div>
-							
+							<div class="four-text">
+								<h3>Total packages</h3>
+								 <?php $sql3 = "SELECT PackageId from tbltourpackages";
+									$query3= $dbh -> prepare($sql3);
+									$query3->execute();
+									$results3=$query3->fetchAll(PDO::FETCH_OBJ);
+									$cnt3=$query3->rowCount();
+				              	?>
+								<h4><?php echo htmlentities($cnt3);?></h4>								
+							</div>							
 						</div>
 					</div>
 					<div class="col-md-3 four-grid">
@@ -71,17 +86,36 @@ $cnt=$query->rowCount();
 							<div class="four-text">
 								<h3>Bookings</h3>
 										<?php $sql1 = "SELECT BookingId from tblbooking";
-$query1 = $dbh -> prepare($sql1);
-$query1->execute();
-$results1=$query1->fetchAll(PDO::FETCH_OBJ);
-$cnt1=$query1->rowCount();
-					?>
+											$query1 = $dbh -> prepare($sql1);
+											$query1->execute();
+											$results1=$query1->fetchAll(PDO::FETCH_OBJ);
+											$cnt1=$query1->rowCount();
+				                       	?>
 								<h4><?php echo htmlentities($cnt1);?></h4>
-
 							</div>
 							
 						</div>
 					</div>
+
+					<div class="four-grids">
+					<div class="col-md-3 four-grid">
+						<div class="four-w3ls">
+							<div class="icon">
+								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
+							</div>
+							<div class="four-text">
+								<h3>Issues Raised</h3>
+								  <?php $sql5 = "SELECT id from tblissues";
+									$query5= $dbh -> prepare($sql5);
+									$query5->execute();
+									$results5=$query5->fetchAll(PDO::FETCH_OBJ);
+									$cnt5=$query5->rowCount();
+				                	?>
+								<h4><?php echo htmlentities($cnt5);?></h4>								
+							</div>							
+						</div>
+					</div>
+
 					<div class="col-md-3 four-grid">
 						<div class="four-w3ls">
 							<div class="icon">
@@ -90,60 +124,18 @@ $cnt1=$query1->rowCount();
 							<div class="four-text">
 								<h3>Enquiries</h3>
 												<?php $sql2 = "SELECT id from tblenquiry";
-$query2= $dbh -> prepare($sql2);
-$query2->execute();
-$results2=$query2->fetchAll(PDO::FETCH_OBJ);
-$cnt2=$query2->rowCount();
-					?>
-								<h4><?php echo htmlentities($cnt2);?></h4>
-								
-							</div>
-							
+													$query2= $dbh -> prepare($sql2);
+													$query2->execute();
+													$results2=$query2->fetchAll(PDO::FETCH_OBJ);
+													$cnt2=$query2->rowCount();
+				                              	?>
+								<h4><?php echo htmlentities($cnt2);?></h4>								
+							</div>							
 						</div>
 					</div>
-					<div class="col-md-3 four-grid">
-						<div class="four-wthree">
-							<div class="icon">
-								<i class="glyphicon glyphicon-briefcase" aria-hidden="true"></i>
-							</div>
-							<div class="four-text">
-								<h3>Toatal packages</h3>
-																	<?php $sql3 = "SELECT PackageId from tbltourpackages";
-$query3= $dbh -> prepare($sql3);
-$query3->execute();
-$results3=$query3->fetchAll(PDO::FETCH_OBJ);
-$cnt3=$query3->rowCount();
-					?>
-								<h4><?php echo htmlentities($cnt3);?></h4>
-								
-							</div>
-							
-						</div>
-					</div>
+				
 						<div class="clearfix"></div>
 				</div>
-
-		<div class="four-grids">
-					<div class="col-md-3 four-grid">
-						<div class="four-w3ls">
-							<div class="icon">
-								<i class="glyphicon glyphicon-folder-open" aria-hidden="true"></i>
-							</div>
-							<div class="four-text">
-								<h3>Issues Riaised</h3>
-												<?php $sql5 = "SELECT id from tblissues";
-$query5= $dbh -> prepare($sql5);
-$query5->execute();
-$results5=$query5->fetchAll(PDO::FETCH_OBJ);
-$cnt5=$query5->rowCount();
-					?>
-								<h4><?php echo htmlentities($cnt5);?></h4>
-								
-							</div>
-							
-						</div>
-					</div>
-
 
 					<div class="clearfix"></div>
 				</div>
@@ -155,7 +147,7 @@ $cnt5=$query5->rowCount();
 </div>
 <!--inner block end here-->
 <!--copy rights start here-->
-<?php include('includes/footer.php');?>
+
 </div>
 </div>
 

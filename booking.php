@@ -4,7 +4,6 @@ error_reporting(0);
 include('includes/config.php');
 if(isset($_POST['submit2']))
 {    
-   
     $pid=intval($_GET['pkgid']);
     $useremail=$_SESSION['login'];
     $fromdate=$_POST['fromdate'];
@@ -18,7 +17,6 @@ if(isset($_POST['submit2']))
 	$query -> bindParam(':useremail', $useremail, PDO::PARAM_STR);
 	$query->execute();
 	$results=$query->fetchAll(PDO::FETCH_OBJ);
-    //  echo "<pre>"; print_r($results); exit;echo "</pre>";
     if($query->rowCount() > 0 )
 	{ 
        $error="You have already booked this Package"; 
@@ -108,9 +106,11 @@ if(isset($_POST['submit2']))
 	</div>
 </div>
 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<p style="color:red"><?php echo htmlentities($error); ?> </p></div><?php } 
-				else if($msg){?><div class="succWrap"><strong>GREAT</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+				else if($msg){?><div class="succWrap"><strong>GREAT</strong>:<?php echo htmlentities($msg); 
+                ?> </div><?php 
+                include('payment.php');
+                }?>
 
-<?php include('payment.php');?>
 <?php include('includes/footer.php');?>
 <!-- signup -->
 <?php include('includes/signup.php');?>			
