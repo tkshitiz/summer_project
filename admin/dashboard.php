@@ -143,14 +143,11 @@ else{
 
 
 <div class="inner-block">
-
 </div>
 <!--inner block end here-->
 <!--copy rights start here-->
-
 </div>
 </div>
-
 			<!--/sidebar-menu-->
 				<?php include('includes/sidebarmenu.php');?>
 							  <div class="clearfix"></div>		

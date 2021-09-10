@@ -84,9 +84,23 @@ include('includes/config.php');
 							</tbody>
 							
 
-					<?php } echo "<h2 class='alert alert-success' role='alert'>Payment Successful</h2>";
-					}?>
-					
+					<?php } echo "<h2 class='alert alert-success' role='alert'>Payment Successful</h2>";?>
+					<?php $sql="SELECT sum(PackagePrice)FROM tbltourpackages				
+						INNER JOIN tblbooking ON tbltourpackages.PackageId = tblbooking.PackageId 
+						WHERE tblbooking.UserEmail='$uEmail'";
+						$query = $dbh->prepare($sql);
+						$query -> bindParam(':uEmail', $uEmail, PDO::PARAM_STR);
+						$query->execute();
+						$result = $query->fetchAll(PDO::FETCH_OBJ);					
+						forEach($result as $totals){
+						  forEach($totals as $key=>$total)
+						  {	
+					?>
+					<tr>
+					<th style="text-align:center;background:#beccbe;border-top:5px solid green;"colspan="2">TOTAL</th>
+					<td style="border-top:5px solid green;">Rs.<?php echo $total;?></td>
+				  </tr>					
+					<?php }}}?>					
 					</table>
 	                        </div>
 							<form action="save.php?email=<?php echo $uEmail;?>" method="POST">
