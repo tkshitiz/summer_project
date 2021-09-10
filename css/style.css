@@ -1,15 +1,17 @@
 
+:root {
+   --background:#8c8d90; 
+   --pkgTitleColor:#ad6840;
+   --pkgButtonColor:#5b8c8a;
+}
 html, body{
+    box-sizing: border-box;
 	font-size: 100%;
 	background:#ffffff;
 	font-family: 'Open Sans', sans-serif;
 }
 body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, i.icon5, i.icon6 {
 	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-	-ms-transition:0.5s all;
 }
 
 a:hover{
@@ -140,15 +142,16 @@ i.fa.fa-lock {
 }
 /*-- /header --*/
 /*-- banner --*/
-.banner {
+.carousel-inner {
     position: relative;
-    background: url(../images/trek2.jpeg) no-repeat;  
     background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    -moz-background-size: cover;
-    min-height: 430px;
+    min-height: 400px;
+    overflow:hidden;
+}
+.carousel-inner > .item > img{
+    object-fit:cover;
+    width:100%;
+    height: 400px;
 }
 .banner h1 {
     position:absolute;
@@ -400,7 +403,7 @@ i.fas.fa-glasses,i.fas.fa-user,i.fas.fa-address-book{
 .holiday h3 {
     font-size: 2em;
     font-weight: 700;
-    color: #34ad00;
+    color: #9c8c5e;
 }
 .holiday p {
     font-size: 1.2em;
@@ -450,7 +453,7 @@ i.fas.fa-glasses,i.fas.fa-user,i.fas.fa-address-book{
     color:orange;
 }
 .footer-btm {
-    background:#406b51db;
+    background:var(--background);
     padding: 0.5em 0;
 	text-align:center;
 }
@@ -586,7 +589,7 @@ a.view {
     padding: 6px 18px;
     font-weight: 700;
     color: #fff;
-    background-color:#57963c;
+    background-color:var(--pkgButtonColor);
     border: 0;
     font-size: 13px;
     border-radius: 2px;
@@ -1203,7 +1206,7 @@ span.glyphicon.glyphicon-eye-open, span.glyphicon.glyphicon-thumbs-up {
 .rom-btm h4 {
     font-size: 1.5em;
     font-weight: 700;
-    color: #56963b;
+    color: var(--pkgTitleColor);
 }
 .rom-btm p {
     font-size: 15px;
@@ -2279,7 +2282,7 @@ ul.set-1 {
     margin-bottom:0px !important;
     border-radius:0px !important;
     border: none !important;
-    background-color: #5c806b !important;
+    background-color: var(--background);
 }
 ul.nav.navbar-nav li a {
     font-size: 15px ;
@@ -2290,7 +2293,8 @@ ul.nav.navbar-nav li a {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color:white;
     display: inline-block;
-    background-color: orange;
+    background-color: rgb(22, 20, 17);
+    border-radius: 60%;
    
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {

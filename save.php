@@ -12,8 +12,7 @@
     file_put_contents($file, "");
     forEach($booking as $values){
         forEach($values as $key =>$value){
-                  fwrite($fp, "$key:\t $value\n");
-                  
+                  fwrite($fp, "$key:\t $value\n");             
         }
       }
       $sql="SELECT sum(PackagePrice)FROM tbltourpackages				

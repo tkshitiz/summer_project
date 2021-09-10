@@ -30,15 +30,38 @@ include('includes/config.php');
 </head>
 <body>
 <?php include('includes/header.php');?>
-<div class="banner">	
-	<div class="container">
-		<div class="col-md-9" style="float:left;"> 
-			<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="margin-right: 50px; margin-left: 50px;color:#e5fbef; visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;">Nepal Holiday, Nepal Tour Package</h1>
-				<p>The Land of Himalayas offers you thrilling , inspiring trekking routes and mountaineering packages 
-				all over Nepal.</p> <br>
-				<button class="btn btn-primary"><a style="color:white;text-decoration:none;" href="#" class="see-more">View More</a></button>  
-		</div>
-	</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/trek2.jpeg" alt="Banner image">
+    </div>
+
+    <div class="item">
+      <img src="images/trek1.jpg" alt="Banner Image">
+    </div>
+
+    <div class="item">
+      <img src="images/trek.jpg" alt="Banner Image">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <!---holiday---->
