@@ -97,21 +97,21 @@ include('includes/config.php');
 						  {	
 					?>
 					<tr>
-					<th style="text-align:center;background:#beccbe;border-top:5px solid green;"colspan="2">TOTAL</th>
-					<td style="border-top:5px solid green;">Rs.<?php echo $total;?></td>
+					<th style="text-align:center;background:#beccbe;border-top:5px solid black;"colspan="2">TOTAL</th>
+					<td style="border-top:5px solid black;background:#9ac5cc">Rs.<?php echo $total;?></td>
 				  </tr>					
 					<?php }}}?>					
 					</table>
 	                        </div>
 							<form action="save.php?email=<?php echo $uEmail;?>" method="POST">
-								<button type="submit" style="margin: 10px 50px 100px 100px;"type="button" class="btn btn-info">
-								save</button>
+								<button type="submit" style="margin: 10px 50px 100px 100px;"type="button" class="btn btn-primary">
+								Save</button>
 						   </form>
 						
 		   <?php	}
 			else
 			{
-				echo "<h2 class='alert alert-danger' role='alert'>Payment UnSuccessful</h2>";
+			   header('location:esewa_failed.php');
 			}
             
 		}	
