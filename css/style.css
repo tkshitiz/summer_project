@@ -476,7 +476,7 @@ i.fas.fa-glasses,i.fas.fa-user,i.fas.fa-address-book{
 /*-- /footer --*/
 /*-- bus --*/
 .banner-1 {
-    background: url(../images/3.jpg)no-repeat;
+    background: url(../images/trek.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -489,7 +489,7 @@ i.fas.fa-glasses,i.fas.fa-user,i.fas.fa-address-book{
     margin-bottom: 40px;
     padding: 1.5em 0 0;
     text-align: center;
-    color: #ffffff;
+    color: #47789a;
 }
 .bus-tp P {
     float: left;
@@ -795,7 +795,7 @@ i.fa.fa-gift{
 /*-- /offers-1 --*/
 /*-- hotels --*/
 .banner-2 {
-    background: url(../images/6.jpg)no-repeat;
+    background: url(../images/trek1.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -804,7 +804,7 @@ i.fa.fa-gift{
     min-height: 430px;
 }
 .banner-3 {
-    background: url(../images/6.jpg)no-repeat;
+    background: url(../images/trek1.jpg)no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -824,7 +824,7 @@ i.fa.fa-gift{
     margin-bottom: 40px;
     padding: 1.5em 0 0;
     text-align: center;
-    color: #fff;
+    color: #535e6b;
 }
 .hotes-left {
     text-align: center;

@@ -69,9 +69,9 @@ else{
 		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p>
-	<table border="1" width="100%">
+	<table class="table table-success table-striped" width="100%" style="background:#c7dbd2;>
 <tr align="center">
-<th>#</th>
+<th>S.N</th>
 <th>Ticket Id</th>
 <th>Issue</th>	
 <th>Description</th>
@@ -103,7 +103,6 @@ foreach($results as $result)
 </tr>
 <?php $cnt=$cnt+1; }} ?>
 	</table>
-		
 			</p>
 			</form>
 

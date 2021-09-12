@@ -118,7 +118,7 @@ $error="You can't cancel booking before 24 hours";
 		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p>
-	<table border="1" width="100%">
+	<table class="table table-success table-striped" width="100%" style="background:#c7dbd2;">
 <tr align="center">
 <th>#</th>
 <th>Booking Id</th>
